@@ -11,6 +11,7 @@ public class Lienzo extends Canvas implements Constantes {
         escenario = new Escenario(this);
         lanzadorTareas= new Timer();
         lanzadorTareas.scheduleAtFixedRate(escenario.jugador,0,1000);
+        lanzadorTareas.scheduleAtFixedRate(escenario.adversario,0,1000);
         
     
     
